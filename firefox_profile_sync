@@ -1,0 +1,12 @@
+#!/bin/ksh
+#
+# firefox profile sync on RAM
+
+daemon="/home/justin/Shares/firefox-profile-sync/firefox-profile-sync.sh"
+daemon_user="justin"
+
+. /etc/rc.d/rc.subr
+
+rc_reload=NO
+
+rc_cmd $1
